@@ -1,0 +1,35 @@
+.button_wrapper {
+  position: relative;
+}
+
+.button {
+  font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.5rem;
+  border: 1px solid #121212;
+  color: #121212;
+  background-color: #ffffff;
+  transition: all 0.1s linear;
+}
+
+.button:hover {
+  transform: translate(-0.25rem, 0.25rem);
+}
+
+.button:active {
+  color: #CD7745;
+}
+
+.button+div {
+  z-index: -1;
+  white-space: nowrap;
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  padding: 0 1.5rem;
+  height: 2.5rem;
+  color: transparent;
+  background-color: #ffffff;
+  font-size: 0.875rem;
+  border: 1px solid #121212;
+}
