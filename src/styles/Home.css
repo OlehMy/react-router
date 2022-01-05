@@ -9,12 +9,12 @@
 }
 
 .home-page_header {
-  background-color: #496d8341;
+  background: linear-gradient(#496d836e, #cd77456b);;
   position: relative;
   max-width: 54rem;
   min-height: 24rem;
   margin: 0 auto;
-  padding: 2.625rem 0;
+  padding: 2.5rem 0;
   justify-content: center;
 }
 
@@ -51,10 +51,6 @@
 /* ---------------------------------media--------------------------------- */
 
 @media only screen and (max-width: 768px) {
-  .home-page_header {
-      margin: 4.875rem 0 6rem;
-  }
-
   .home-page_header>h1 {
       padding: 0 0 1.25rem;
       font-size: 3rem;
@@ -73,10 +69,6 @@
 }
 
 @media only screen and (max-width: 576px) {
-  .home-page_header {
-      margin: 3rem 0 4rem;
-  }
-
   .home-page_header>h1 {
       padding: 0 0 1.25rem;
       font-size: 2rem;

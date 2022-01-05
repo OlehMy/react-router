@@ -19,6 +19,7 @@
 }
 
 .navbar_link {
+  position: relative;
   font-size: 1.2rem;
   line-height: 1.2rem;
   padding: 0;
@@ -27,15 +28,42 @@
   transition: all 0.2s linear;
 }
 
+.navbar_link:after {
+  position: absolute;
+  left: 50%;
+  content: '';    
+  height: 2px;    
+  background: white;
+  transition: all 0.3s linear;
+  width: 0;
+  bottom: -2px;  
+}
+
+.navbar_link:hover:after {
+  width: 100%;
+  margin-left: -50%;                
+}
+
 nav .active {
   color: #CD7745;
 }
 
-.navbar_link:hover {
-  color: #d1a083;
-}
-
 /* ---------------------------------hidden-------------------------------- */
+
+#hidden {
+  z-index: 1;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 100vw;
+  min-height: 90vh;
+  background-color: #ffffff;
+  padding: 15vh 8vw;
+  flex-wrap: nowrap;
+}
 
 .navbar_button {
   cursor: pointer;
@@ -58,10 +86,6 @@ nav .active {
       display: none;
   }
 
-  .navbar_link:hover {
-      color: #d1a083;
-  }
-
   nav .active {
   color:#CD7745;
   }
@@ -77,26 +101,14 @@ nav .active {
       width: 100%;
   }
 
-  #hidden {
-      z-index: 1;
-      position: absolute;
-      top: 10vh;
-      left: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      min-width: 100vw;
-      min-height: 90vh;
-      background-color: #ffffff;
-      padding: 15vh 8vw;
-      flex-wrap: nowrap;
+  .navbar_link:after {
+    display: none;  
   }
 }
 
 @media only screen and (max-height: 576px) {
   #hidden {
     padding: 8vh 4vw;
-    flex-wrap: nowrap;
   }
 
   .navbar_link {

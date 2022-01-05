@@ -19,7 +19,7 @@ html {
 body {
   font-size: 1rem;
   margin: 0 auto;
-  background-color: #CD7745;
+  background: linear-gradient(#CD7745, #496D83);
   font-family: 'Audiowide', sans-serif;
   /* color: #CD7745; */
   /* background-color: #496D83; */

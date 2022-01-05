@@ -24,7 +24,7 @@ const links = [
 ];
 
 function NavBar() {
-  const [showLinks, setShowLinks] = useState(true);
+  const [showLinks, setShowLinks] = useState(false);
   return (
     <nav className='navbar'>
       <div className='container'>
