@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Form.css';
+import Button from '../components/Button';
 
 function Form() {
   return (
@@ -18,6 +19,7 @@ function Form() {
           <label className='input_label' for="dynamic-label-input">Last Name</label>
         </div>
       </div>
+      <Button buttonStyle='button' buttonName='Sign In' />
     </form >
   )
 }

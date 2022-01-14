@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contacts from './pages/Contacts';
+import SignIn from './pages/SignIn';
 import User from './pages/User';
 import Error from './pages/Error';
 
@@ -17,6 +18,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='about' element={<About />} />
           <Route path='contacts' element={<Contacts />} />
+          <Route path='sign-in' element={<SignIn />} />
           <Route path='user' element={<User />} />
           <Route path='*' element={<Error />} />
         </Routes>

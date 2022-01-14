@@ -18,6 +18,10 @@ const links = [
     label: 'Contacts',
   },
   {
+    to: 'sign-in',
+    label: 'Sign In',
+  },
+  {
     to: 'user',
     label: 'User',
   },

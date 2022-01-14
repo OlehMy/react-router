@@ -84,6 +84,13 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+.App-header>p {  
+  font-size: calc(20px + 2vmin);
+  font-weight: 500;
+  color: #496D83;
+  padding: 2rem 0;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotateY(0deg);
